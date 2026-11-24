@@ -1,0 +1,40 @@
+{
+  "name": "Recruiter Desk",
+  "description": "Screens job advertisements and candidate CVs for evidence, role fit, seniority, and unmet must-have qualifications.",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "Recruiting Team",
+    "url": "https://example.com"
+  },
+  "supportedInterfaces": [
+    {
+      "url": "http://127.0.0.1:9999/",
+      "protocolBinding": "JSONRPC",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "recruiter-cv-review",
+      "name": "Recruiter CV review",
+      "description": "Send a job advertisement and candidate CV as text. Returns concise findings; genuine unmet must-haves start with MISSING:.",
+      "tags": [
+        "recruiting",
+        "cv-review"
+      ],
+      "examples": [
+        "Screen this CV against the job advertisement and distinguish must-haves from preferred qualifications."
+      ]
+    }
+  ]
+}
